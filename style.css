@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    --border-color: rgb(255, 86, 115);
+}
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-sub {
+    width: 20%;
+    height: 400px;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.box h1 {
+    text-align: center;
+}
+
+.lua-chon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.checkbox {
+    margin: 0 8px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.checkbox a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.s1 a:nth-child(2),
+.s2 a:nth-child(2) {
+    display: none;
+}
+
+.s1:hover a:nth-child(1),
+.s2:hover a:nth-child(1) {
+    display: none;
+}
+
+.s1:hover a:nth-child(2),
+.s2:hover a:nth-child(2) {
+    display: inline-block;
+}
