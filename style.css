@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,59 +20,55 @@ body {
 #wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
-.box-sub {
-    width: 20%;
-    height: 400px;
+#first-click {
+    
 }
 
 .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 350px;
     height: 350px;
-    border: 2px solid var(--border-color);
     border-radius: 6px;
-    padding: 12px;
+    border: 2px solid var(--border-color);
+    position: relative;
 }
 
 .box h1 {
     text-align: center;
 }
 
-.lua-chon {
+.options {
     display: flex;
-    width: 100%;
     justify-content: center;
-    margin-top: 64px;
+    width: 100%;
+    margin-top: 32px;
 }
 
-.checkbox {
-    margin: 0 8px;
-    border: 2px solid var(--border-color);
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 12px 24px;
-}
-
-.checkbox a {
+button.option {
     display: inline-block;
     font-size: 20px;
     text-decoration: none;
     color: #000;
+    border: 2px solid var(--border-color);
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-.s1 a:nth-child(2),
-.s2 a:nth-child(2) {
-    display: none;
+button.option ~ button.option {
+    margin-left: 16px;
 }
 
-.s1:hover a:nth-child(1),
-.s2:hover a:nth-child(1) {
-    display: none;
-}
-
-.s1:hover a:nth-child(2),
-.s2:hover a:nth-child(2) {
-    display: inline-block;
+.icon-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 24px;
 }
