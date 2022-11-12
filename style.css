@@ -1,8 +1,11 @@
-body {
-  position: relative;
-  height: 100%;
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  position: relative;
+  height: 100%;
   background-image: linear-gradient(
     to bottom right,
     rgb(255, 222, 227),
@@ -33,8 +36,10 @@ canvas {
 @keyframes effect {
   from {
     transform: scale(1);
+    opacity: 0.5;
   }
   to {
-    transform: scale(1.3);
+    transform: scale(1.2);
+    opacity: 1;
   }
 }
